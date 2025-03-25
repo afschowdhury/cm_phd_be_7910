@@ -180,5 +180,5 @@ predictions = best_model.predict(X_test)
 # 9. Create Submission File
 submission = pd.DataFrame({"PassengerId": test_passenger_ids, "Survived": predictions})
 
-submission.to_csv("titanic_submission.csv", index=False)
+submission.to_csv("kaggle_submission/titanic_submission.csv", index=False)
 print("\nSubmission file created: titanic_submission.csv")

@@ -207,10 +207,10 @@ def train_model(model, X_train, y_train, learning_rate, num_epochs=2500):
     return model, losses
 
 
-# Define hidden layer sizes (you can adjust these)
+# Define hidden layer sizes
 hidden_sizes = [64, 32, 16, 8]
 
-# Try different learning rates
+# Hyperparameters (learning rates)
 learning_rates = [0.01, 0.001, 0.0001]
 best_model = None
 lowest_loss = float("inf")
